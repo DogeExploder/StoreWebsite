@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebay</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ebay</h1>
+            <nav>
+                <button id="other-store-button">Go to Another Store</button>
+                <select id="category-dropdown">
+                    <option value="all">All Categories</option>
+                    <option value="nuclear-weapons">Nuclear Weapons</option>
+                    <option value="structures">Structures</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="subscriptions">Subscriptions</option>
+                </select>
+            </nav>
+        </header>
+        <div id="spending-limit">
+            <p>Spending Limit: $<span id="balance">99999999999999.00</span></p>
+            <button id="reset-button">Reset Balance & Cart</button>
+        </div>
+        <div class="categories">
+            <div class="category" id="nuclear-weapons">
+                <h2>Other</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="dude.jpg" alt="Item 1">
+                        <h3>Item 1</h3>
+                        <p class="price">$30.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="flip-flops.jpg" alt="PC">
+                        <h3>flip flops</h3>
+                        <p class="price">$20.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="horse.jpg" alt="PC">
+                        <h3>Horse</h3>
+                        <p class="price">$500.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="kitten.jpg" alt="PC">
+                        <h3>Cat</h3>
+                        <p class="price">$200.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="puppy.jpg" alt="PC">
+                        <h3>Dog</h3>
+                        <p class="price">$300.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="hot-tub.jpg" alt="PC">
+                        <h3>Hot Tub</h3>
+                        <p class="price">$5000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="gold-bar.jpg" alt="PC">
+                        <h3>Gold Bar</h3>
+                        <p class="price">$50000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="structures">
+                <h2>Structures</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="House.jpg" alt="House">
+                        <h3>House</h3>
+                        <p class="price">$850000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Mansion.jpg" alt="Mansion">
+                        <h3>Mansion</h3>
+                        <p class="price">$50000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Skyscaper.jpg" alt="Skyscraper">
+                        <h3>Skyscraper</h3>
+                        <p class="price">$999000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="vehicles">
+                <h2>Vehicles</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="tesla.jpg" alt="Tesla">
+                        <h3>Tesla</h3>
+                        <p class="price">$120000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="yacht.jpg" alt="PC">
+                        <h3>Yacht</h3>
+                        <p class="price">$90000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="cruise-ship.jpg" alt="PC">
+                        <h3>Crusie Ship</h3>
+                        <p class="price">$2000000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="monster-truck.jpg" alt="PC">
+                        <h3>Monster Truck</h3>
+                        <p class="price">$500000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="ferrari.jpg" alt="PC">
+                        <h3>Ferrari</h3>
+                        <p class="price">$8000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="ford-f-150.jpg" alt="PC">
+                        <h3>Ford F150</h3>
+                        <p class="price">$80000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="formula-1-car.jpg" alt="PC">
+                        <h3>Formula 1 Car</h3>
+                        <p class="price">$10000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="boeing-747.jpg" alt="PC">
+                        <h3>747-400</h3>
+                        <p class="price">$120000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Lamborgini.jpg" alt="Lamborghini">
+                        <h3>Lamborghini</h3>
+                        <p class="price">$2000000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="electronics">
+                <h2>Electronics</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="GamingPc.jpg" alt="PC">
+                        <h3>PC</h3>
+                        <p class="price">$8000.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="drone.jpg" alt="PC">
+                        <h3>Drone</h3>
+                        <p class="price">$1200.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="airpods.jpg" alt="PC">
+                        <h3>Airpods</h3>
+                        <p class="price">$200.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="AmazonEcho.jpg" alt="PC">
+                        <h3>Amazon Echo</h3>
+                        <p class="price">$600.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="bike.jpg" alt="PC">
+                        <h3>Bike</h3>
+                        <p class="price">$200.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Iphone.jpg" alt="Iphone 15">
+                        <h3>Iphone 15</h3>
+                        <p class="price">$1400.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Laptop.jpg" alt="Laptop">
+                        <h3>Laptop</h3>
+                        <p class="price">$2500.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="furniture">
+                <h2>Furniture</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="Couch.jpg" alt="Couch">
+                        <h3>Couch</h3>
+                        <p class="price">$500.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Chair.jpg" alt="Couch">
+                        <h3>Chair</h3>
+                        <p class="price">$50.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Table.jpg" alt="Couch">
+                        <h3>Table</h3>
+                        <p class="price">$60.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Shelfs.png" alt="Couch">
+                        <h3>Shelves</h3>
+                        <p class="price">$40.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="subscriptions">
+                <h2>Subscriptions</h2>
+                <div class="items-list">
+                    <div class="item">
+                        <img src="Netflix.png" alt="Netflix 1 year">
+                        <h3>Netflix 1 year</h3>
+                        <p class="price">$10.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Spotify.jpeg" alt="Spotify 1 year">
+                        <h3>Spotify 1 year</h3>
+                        <p class="price">$60.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="MovieTickets.jpg" alt="PC">
+                        <h3>Movie Tickets</h3>
+                        <p class="price">$20.00</p>
+                        <input type="number" min="1" value="1" class="amount">
+                        <div class="buttons">
+                            <button class="buy-button">Buy</button>
+                            <button class="sell-button">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p>No items in the cart.</p>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
